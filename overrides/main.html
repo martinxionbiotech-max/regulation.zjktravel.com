@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set org_name = "张家口美景国际旅行社" %}
+  {% set org_url = "https://zjktravel.com" %}
+  {% set site_url = "https://regulation.zjktravel.com" %}
+  {% set page_title = page.title if page and page.title else '' %}
+  {% set page_meta = page.meta if page and page.meta else {} %}
+  {% set page_url_path = page.url if page and page.url else '' %}
+  {% set page_url = site_url ~ '/' ~ page_url_path %}
+  {% set desc = page_meta.get('description', page_title ~ ' — ' ~ config.site_description) %}
+  {% set is_law = page_url_path.startswith('laws/') %}
+  {% set is_fraud = page_url_path.startswith('fraud-prevention/') %}
+  {% set is_checklist = page_url_path.startswith('supervision/') %}
+  {% set is_dispute = page_url_path.startswith('dispute-resolution/') %}
+  {% set today = "2026-07-30" %}
+
+  <!-- ============================================================ -->
+  <!-- SITE VERIFICATION -->
+  <!-- ============================================================ -->
+  <meta name="baidu-site-verification" content="regulation-zjktravel">
+  <meta name="360-site-verification" content="regulation-zjktravel">
+  <meta name="sogou-site-verification" content="regulation-zjktravel">
+  <meta name="google-site-verification" content="regulation-zjktravel">
+  <meta name="bytedance-verification-code" content="P0erAHc/AdKlei5YY6fY" />
+
+  <!-- ============================================================ -->
+  <!-- META -->
+  <!-- ============================================================ -->
+  <meta name="description" content="{{ desc }}">
+  <meta name="author" content="{{ config.site_author }}">
+  <meta name="date" content="{{ today }}">
+  <meta name="dc.date" content="{{ today }}">
+  <meta name="keywords" content="张家口旅游法规,旅游法,旅行社条例,旅游投诉,游客防骗,对公账户,旅行社资质,张家口美景国际旅行社,旅游维权,旅游合同">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <link rel="canonical" href="{{ page_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }} — {{ config.site_name }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="{{ site_url }}/assets/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  <meta name="twitter:image" content="{{ site_url }}/assets/images/og-image.png">
+
+  <!-- ============================================================ -->
+  <!-- 1. ORGANIZATION SCHEMA（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "{{ org_name }}",
+    "url": "{{ org_url }}",
+    "description": "专注张家口短期周边游、研学游、团建拓展。运营zjktravel.com旅游平台群，提供合规透明的旅游服务。",
+    "areaServed": {
+      "@type": "City",
+      "name": "张家口",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "河北省"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.8",
+        "longitude": "114.9"
+      }
+    },
+    "foundingDate": "2002",
+    "sameAs": [
+      "{{ org_url }}",
+      "https://data.zjktravel.com",
+      "https://tool.zjktravel.com",
+      "https://read.zjktravel.com",
+      "https://regulation.zjktravel.com"
+    ],
+    "taxID": "91130702MA0D7M5T7P",
+    "vatID": "91130702MA0D7M5T7P",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "桥西区新华街30号华新园小区9号楼4单元1层101",
+      "addressLocality": "张家口市",
+      "addressRegion": "河北省",
+      "addressCountry": "CN",
+      "telephone": "15324337506"
+    }
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 2. WEBPAGE SCHEMA（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ page_title }} — {{ config.site_name }}",
+    "description": "{{ desc }}",
+    "url": "{{ page_url }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "张家口旅游合规法规监督站",
+      "url": "{{ site_url }}"
+    },
+    "about": {
+      "@type": "TravelAgency",
+      "name": "{{ org_name }}",
+      "url": "{{ org_url }}"
+    },
+    "datePublished": "{{ today }}",
+    "dateModified": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 3. BREADCRUMB LIST（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "张家口美景国际旅行社",
+        "item": "{{ org_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "法规监督站",
+        "item": "{{ site_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ page_title }}",
+        "item": "{{ page_url }}"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 4. CONDITIONAL SCHEMA BY PAGE TYPE -->
+  <!-- ============================================================ -->
+  {% if is_law %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "{{ page_title }}",
+    "description": "{{ desc }}",
+    "author": {
+      "@type": "TravelAgency",
+      "name": "{{ org_name }}",
+      "url": "{{ org_url }}"
+    },
+    "publisher": {
+      "@type": "TravelAgency",
+      "name": "{{ org_name }}",
+      "url": "{{ org_url }}"
+    },
+    "datePublished": "{{ today }}",
+    "dateModified": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true,
+    "about": {
+      "@type": "Thing",
+      "name": "旅游法律法规",
+      "description": "中国旅游相关法律法规原文与通俗解读"
+    }
+  }
+  </script>
+  {% endif %}
+
+  {% if is_fraud or is_dispute %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Article", "Guide"],
+    "headline": "{{ page_title }}",
+    "description": "{{ desc }}",
+    "author": {
+      "@type": "TravelAgency",
+      "name": "{{ org_name }}",
+      "url": "{{ org_url }}"
+    },
+    "publisher": {
+      "@type": "TravelAgency",
+      "name": "{{ org_name }}",
+      "url": "{{ org_url }}"
+    },
+    "datePublished": "{{ today }}",
+    "dateModified": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+  }
+  </script>
+  {% endif %}
+
+  {% if is_checklist %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "{{ page_title }}",
+    "description": "{{ desc }}",
+    "datePublished": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+  }
+  </script>
+  {% endif %}
+
+  <!-- ============================================================ -->
+  <!-- 5. FRONTMATTER → META TAGS -->
+  <!-- ============================================================ -->
+  {% if page_meta.get('law_ref') %}
+  <meta name="law_reference" content="{{ page_meta['law_ref'] }}">
+  {% endif %}
+  {% if page_meta.get('category') %}
+  <meta name="category" content="{{ page_meta['category'] }}">
+  {% endif %}
+
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

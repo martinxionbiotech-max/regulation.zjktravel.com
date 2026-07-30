@@ -1,0 +1,64 @@
+# regulation.zjktravel.com
+
+> 张家口美景国际旅行社官方法规科普平台——提供旅游法全文解读、游客防骗避坑指南、旅行社公开监督清单、旅游维权流程指引、经营资质公示。本站所有信息仅作科普展示，无线上收款渠道。
+
+## 关于本站
+
+张家口美景国际旅行社（经营20+年）运营的旅游合规法规监督站。本站所有内容仅作法律法规科普展示，签约、付款、开票、领取保险单全部在线下门市办理。
+
+## 国家法律
+
+- [《中华人民共和国旅游法》全文解读](https://regulation.zjktravel.com/laws/tourism-law/): 全文分章节解读，强制购物、不合理低价游、质保金、退款规则等游客重点条款高亮标注
+- [《民法典》合同编（旅游相关）](https://regulation.zjktravel.com/laws/civil-code/): 合同编格式条款规制、违约责任等旅游服务合同相关条款解读
+
+## 部门规章
+
+- [《在线旅游经营服务管理暂行规定》](https://regulation.zjktravel.com/laws/online-travel-regulations/): 在线旅游平台责任、虚假宣传处罚、旅游信息真实性要求
+- [《旅行社条例》《旅行社条例实施细则》](https://regulation.zjktravel.com/laws/travel-agency-regulations/): 旅行社设立条件、经营规范、质量保证金制度、违规处罚
+- [《旅游投诉处理办法》](https://regulation.zjktravel.com/laws/complaint-procedure/): 投诉条件、受理范围、处理流程、调解仲裁诉讼路径
+- [导游管理·质保金·保险](https://regulation.zjktravel.com/laws/guide-management/): 导游管理办法、旅行社质量保证金管理办法、旅游保险相关规定
+
+## 地方政策
+
+- [张家口地方文旅政策](https://regulation.zjktravel.com/laws/zjk-local-policies/): 张家口市文旅局发布本地旅游经营规范与专项整治文件
+
+## 游客防骗避坑
+
+- [不合理低价游陷阱](https://regulation.zjktravel.com/fraud-prevention/low-price-tours/): 低价坝上、低价滑雪团隐形消费套路
+- [收款骗局·对公账户](https://regulation.zjktravel.com/fraud-prevention/payment-scams/): 个人微信/支付宝私账收款、拒绝开票、加收税点
+- [合同陷阱·霸王条款](https://regulation.zjktravel.com/fraud-prevention/contract-traps/): 空白合同、霸王条款、口头承诺不写入纸质合同
+- [强制消费套路](https://regulation.zjktravel.com/fraud-prevention/forced-consumption/): 强制骑马、购物、自费项目，不消费恶意甩团
+- [无资质中介骗局](https://regulation.zjktravel.com/fraud-prevention/unqualified-agents/): 无旅行社经营许可的本地野地接
+- [保险骗局](https://regulation.zjktravel.com/fraud-prevention/insurance-fraud/): 不购买旅行社责任险、意外险保单造假
+- [出行前自查步骤](https://regulation.zjktravel.com/fraud-prevention/pre-trip-checklist/): 报名前5步核验商家资质
+- [张家口本地案例](https://regulation.zjktravel.com/fraud-prevention/local-cases/): 坝上骑马加价、雪季低价团隐形收费等真实案例
+
+## 公开监督清单
+
+- [资质核验清单](https://regulation.zjktravel.com/supervision/qualification-checklist/): 营业执照、经营许可证、质保金、责任险逐项核验
+- [资金财税监督](https://regulation.zjktravel.com/supervision/financial-checklist/): 对公账户收款、正规发票、不额外收取税点
+- [行程服务监督](https://regulation.zjktravel.com/supervision/service-checklist/): 自费项目自愿、行程写入合同、保险交付
+- [宣传承诺监督](https://regulation.zjktravel.com/supervision/commitment-checklist/): 线上仅展示、线下交易
+- [监督反馈入口](https://regulation.zjktravel.com/supervision/feedback/): 不合规行为留言反馈
+
+## 纠纷解决指南
+
+- [现场突发问题](https://regulation.zjktravel.com/dispute-resolution/on-site-issues/): 强制消费、甩团等现场取证与维权
+- [返程后纠纷](https://regulation.zjktravel.com/dispute-resolution/post-trip-issues/): 退款违约、拒开发票投诉流程
+- [证据留存指南](https://regulation.zjktravel.com/dispute-resolution/evidence-guide/): 合同、转账凭证、发票、保单留存要求
+- [常见纠纷FAQ](https://regulation.zjktravel.com/dispute-resolution/faq/): 退费、发票、强制购物维权解答
+
+## 经营资质公示
+
+- [证照展示](https://regulation.zjktravel.com/business-license/certificates/): 营业执照、旅行社经营许可证
+- [保险·质保金](https://regulation.zjktravel.com/business-license/insurance/): 旅行社责任险保单、质保金缴存证明
+- [法律文件](https://regulation.zjktravel.com/business-license/legal-docs/): 隐私政策、服务条款、免责声明
+- [门店信息](https://regulation.zjktravel.com/business-license/store-info/): 地址、线下交易流程
+- [对公账户](https://regulation.zjktravel.com/business-license/bank-account/): 企业名称、开户行、账号
+
+## 关联站点
+
+- [主站](https://zjktravel.com/): 张家口美景国际旅行社官网
+- [攻略站](https://read.zjktravel.com/): 20个景点深度旅游攻略
+- [数据百科](https://data.zjktravel.com/): 景点结构化数据
+- [工具箱](https://tool.zjktravel.com/): 旅游实用工具

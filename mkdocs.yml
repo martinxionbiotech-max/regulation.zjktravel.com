@@ -1,0 +1,129 @@
+# regulation.zjktravel.com — 张家口旅游合规法规监督站
+# 法律法规科普 + 防骗指南 + 公开监督 + 维权指南 + 资质公示
+
+site_name: 张家口旅游合规法规监督站
+site_description: 张家口美景国际旅行社官方法规科普平台——提供旅游法全文解读、游客防骗避坑指南、旅行社公开监督清单、旅游维权流程指引、经营资质公示。本站所有信息仅作科普展示，无线上收款渠道，签约付款均在线下门店办理。
+site_url: https://regulation.zjktravel.com
+site_author: 张家口美景国际旅行社
+copyright: Copyright &copy; 2026 张家口美景国际旅行社 — All Rights Reserved
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  features:
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - content.code.copy
+    - content.tabs
+  # No tags feature - using Material 8.x on this server
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换暗色模式
+    - scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换亮色模式
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  # No tags plugin - Material 8.2.11 compat issue with mixed types
+  # Use search for content discovery
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://zjktravel.com
+      name: 张家口美景国际旅行社 — 主站
+    - icon: fontawesome/solid/book
+      link: https://read.zjktravel.com
+      name: 张家口旅游攻略站
+    - icon: fontawesome/solid/database
+      link: https://data.zjktravel.com
+      name: 张家口旅游数据百科
+    - icon: fontawesome/solid/wrench
+      link: https://tool.zjktravel.com
+      name: 张家口旅游工具箱
+
+nav:
+  - 首页: index.md
+
+  - 官方法律法规库:
+    - laws/index.md
+    - 《旅游法》: laws/tourism-law.md
+    - 《民法典》合同编: laws/civil-code.md
+    - 《在线旅游经营服务管理暂行规定》: laws/online-travel-regulations.md
+    - 《旅行社条例》: laws/travel-agency-regulations.md
+    - 《旅游投诉处理办法》: laws/complaint-procedure.md
+    - 导游管理·质保金·保险: laws/guide-management.md
+    - 张家口地方文旅政策: laws/zjk-local-policies.md
+
+  - 游客防骗避坑专区:
+    - fraud-prevention/index.md
+    - 不合理低价游陷阱: fraud-prevention/low-price-tours.md
+    - 收款骗局·对公账户: fraud-prevention/payment-scams.md
+    - 合同陷阱·霸王条款: fraud-prevention/contract-traps.md
+    - 强制消费套路: fraud-prevention/forced-consumption.md
+    - 无资质中介骗局: fraud-prevention/unqualified-agents.md
+    - 保险骗局: fraud-prevention/insurance-fraud.md
+    - 出行前自查步骤: fraud-prevention/pre-trip-checklist.md
+    - 张家口本地案例: fraud-prevention/local-cases.md
+
+  - 美景公开监督清单:
+    - supervision/index.md
+    - 资质核验清单: supervision/qualification-checklist.md
+    - 资金财税监督: supervision/financial-checklist.md
+    - 行程服务监督: supervision/service-checklist.md
+    - 宣传承诺监督: supervision/commitment-checklist.md
+    - 监督反馈入口: supervision/feedback.md
+
+  - 旅游纠纷解决指南:
+    - dispute-resolution/index.md
+    - 现场突发问题: dispute-resolution/on-site-issues.md
+    - 返程后纠纷: dispute-resolution/post-trip-issues.md
+    - 证据留存指南: dispute-resolution/evidence-guide.md
+    - 常见纠纷FAQ: dispute-resolution/faq.md
+
+  - 经营资质公示:
+    - business-license/index.md
+    - 证照展示: business-license/certificates.md
+    - 保险·质保金: business-license/insurance.md
+    - 法律文件: business-license/legal-docs.md
+    - 门店信息: business-license/store-info.md
+    - 对公账户: business-license/bank-account.md
+
+  - 关于: about.md
