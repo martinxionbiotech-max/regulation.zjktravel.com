@@ -45,9 +45,9 @@ tags:
 
 ## 🔗 关联板块导航
 
-- [公开监督清单 →](/docs/supervision/index.md) — 逐项核验企业合规经营
-- [纠纷解决指南 →](/docs/dispute-resolution/index.md) — 维权流程参考
-- [监督反馈 →](/docs/supervision/feedback.md) — 发现资质问题可举报
+- [公开监督清单 →](/supervision/index.md) — 逐项核验企业合规经营
+- [纠纷解决指南 →](/dispute-resolution/index.md) — 维权流程参考
+- [监督反馈 →](/supervision/feedback.md) — 发现资质问题可举报
 
 ---
 

@@ -121,8 +121,8 @@ tags:
 ## 🔗 关联阅读
 
 - [门店信息 →](./store-info.md) — 线下门店地址与交易流程
-- [宣传承诺监督清单 →](/docs/supervision/commitment-checklist.md) — 线上展示与线下交易的边界说明
-- [纠纷解决指南 →](/docs/dispute-resolution/index.md) — 争议解决流程参考
+- [宣传承诺监督清单 →](/supervision/commitment-checklist.md) — 线上展示与线下交易的边界说明
+- [纠纷解决指南 →](/dispute-resolution/index.md) — 争议解决流程参考
 
 ---
 

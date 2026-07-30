@@ -60,7 +60,7 @@ tags:
 ### 📞 如遇违规收款，请立即举报
 
 - **门店监督电话：15324337506**
-- **[监督反馈通道 →](/docs/supervision/feedback.md)**
+- **[监督反馈通道 →](/supervision/feedback.md)**
 
 ---
 
@@ -77,10 +77,10 @@ tags:
 
 ## 🔗 关联阅读
 
-- [资金财税监督清单 →](/docs/supervision/financial-checklist.md) — 对公账户收款、发票、税点等完整承诺
+- [资金财税监督清单 →](/supervision/financial-checklist.md) — 对公账户收款、发票、税点等完整承诺
 - [门店信息 →](./store-info.md) — 线下交易完整流程说明
 - [证照展示 →](./certificates.md) — 核对营业执照信息
-- [纠纷解决指南 →](/docs/dispute-resolution/index.md) — 资金纠纷维权流程
+- [纠纷解决指南 →](/dispute-resolution/index.md) — 资金纠纷维权流程
 
 ---
 

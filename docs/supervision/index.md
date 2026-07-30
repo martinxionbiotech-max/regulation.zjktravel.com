@@ -33,8 +33,8 @@ tags:
 
 ## 🔗 关联板块导航
 
-- [经营资质公示 →](/docs/business-license/index.md) — 查看营业执照、许可证、保单等全套资质文件
-- [纠纷解决指南 →](/docs/dispute-resolution/index.md) — 遇到问题时按步骤维权
+- [经营资质公示 →](/business-license/) — 查看营业执照、许可证、保单等全套资质文件
+- [纠纷解决指南 →](/dispute-resolution/) — 遇到问题时按步骤维权
 - [监督反馈 →](./feedback.md) — 向我们提出合规建议或问题
 
 ---

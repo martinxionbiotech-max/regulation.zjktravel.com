@@ -144,7 +144,7 @@ tags:
 - [证据留存指南](./evidence-guide.md) — 需要留存的证据完整清单
 - [现场问题处理](./on-site-issues.md) — 行程途中的紧急维权方案
 - [FAQ常见问题](./faq.md) — 返程纠纷常见疑问解答
-- [资金财税清单 →](/docs/supervision/financial-checklist.md) — 发票与资金保障说明
+- [资金财税清单 →](/supervision/financial-checklist.md) — 发票与资金保障说明
 
 ---
 

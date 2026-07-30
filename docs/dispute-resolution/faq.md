@@ -47,7 +47,7 @@ tags:
    - 📞 **12315** — 市场监督投诉热线
    - 📞 **12345** — 政务服务热线
 
-**温馨提示：** 美景国际旅行社承诺任何消费均可开具正规发票，不加收税点。如遇拒绝，请通过[监督反馈](/docs/supervision/feedback.md)通道举报。
+**温馨提示：** 美景国际旅行社承诺任何消费均可开具正规发票，不加收税点。如遇拒绝，请通过[监督反馈](/supervision/feedback.md)通道举报。
 
 ---
 
@@ -95,7 +95,7 @@ tags:
 
 **建议：** 支付任何旅游费用前，务必确认收款账户名称与旅行社营业执照上的企业名称完全一致。**对公转账是保障自身权益的第一道防线。**
 
-**[查看对公账户信息 →](/docs/business-license/bank-account.md)**
+**[查看对公账户信息 →](/business-license/bank-account.md)**
 
 ---
 
@@ -120,7 +120,7 @@ tags:
 - [现场问题处理](./on-site-issues.md) — 行程途中的紧急维权指南
 - [返程纠纷处理](./post-trip-issues.md) — 返程后维权完整流程
 - [证据留存指南](./evidence-guide.md) — 各类证据的留存方法
-- [监督反馈 →](/docs/supervision/feedback.md) — 发现问题直接反馈给旅行社
+- [监督反馈 →](/supervision/feedback.md) — 发现问题直接反馈给旅行社
 
 ---
 

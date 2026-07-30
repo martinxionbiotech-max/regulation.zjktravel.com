@@ -268,4 +268,28 @@
 {% endblock %}
 
 {% block footer %}
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-links" style="margin-bottom:12px">
+        <strong>关联站点：</strong>&nbsp;
+        <a href="https://zjktravel.com/" title="张家口美景国际旅行社主站">zjktravel.com</a> ·
+        <a href="https://read.zjktravel.com/" title="张家口旅游攻略站">read.zjktravel.com</a> ·
+        <a href="https://data.zjktravel.com/" title="张家口旅游数据百科">data.zjktravel.com</a> ·
+        <a href="https://tool.zjktravel.com/" title="张家口旅游工具箱">tool.zjktravel.com</a>
+      </div>
+      <div class="md-footer-links" style="margin-bottom:12px; font-size:0.85rem; color:#78909c;">
+        ⚠️ 本站仅法律法规科普展示，<strong>无线上收款渠道</strong>。签约、付款、开票、领取保险单全部在线下门市办理。
+        <br>咨询经理：<strong>15324337506</strong> · 旅游投诉：12301 / 12345
+        <br>本网站访客信息存储于境外 Cloudflare 服务器，详见<a href="/business-license/legal-docs/">隐私政策</a>。
+      </div>
+      <div class="md-copyright">
+        {{ config.copyright }}
+        {% if config.extra.generator %}
+          · Powered by MkDocs Material
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>
 {% endblock %}

@@ -40,9 +40,9 @@ tags:
 
 ## 🔗 关联板块
 
-- [公开监督清单 →](/docs/supervision/index.md) — 监督企业合规经营的各项清单
-- [经营资质公示 →](/docs/business-license/index.md) — 企业全套资质文件
-- [监督反馈 →](/docs/supervision/feedback.md) — 向企业直接反馈问题
+- [公开监督清单 →](/supervision/index.md) — 监督企业合规经营的各项清单
+- [经营资质公示 →](/business-license/index.md) — 企业全套资质文件
+- [监督反馈 →](/supervision/feedback.md) — 向企业直接反馈问题
 
 ---
 
