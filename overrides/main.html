@@ -2,6 +2,7 @@
 
 {% block extrahead %}
   {% set org_name = "张家口美景国际旅行社" %}
+  {% set org_short = "美景国旅" %}
   {% set org_url = "https://zjktravel.com" %}
   {% set site_url = "https://regulation.zjktravel.com" %}
   {% set page_title = page.title if page and page.title else '' %}
@@ -13,7 +14,12 @@
   {% set is_fraud = page_url_path.startswith('fraud-prevention/') %}
   {% set is_checklist = page_url_path.startswith('supervision/') %}
   {% set is_dispute = page_url_path.startswith('dispute-resolution/') %}
+  {% set is_faq = page_url_path.endswith('faq.md') or page_url_path.endswith('faq/') %}
   {% set today = "2026-07-30" %}
+  {% set page_title_brand = page_title ~ ' — ' ~ org_name %}
+  {% if page and page.url == '.' %}
+    {% set page_title_brand = '张家口美景国际旅行社（美景国旅）· 旅游合规法规监督站' %}
+  {% endif %}
 
   <!-- ============================================================ -->
   <!-- SITE VERIFICATION -->
@@ -25,19 +31,25 @@
   <meta name="bytedance-verification-code" content="P0erAHc/AdKlei5YY6fY" />
 
   <!-- ============================================================ -->
-  <!-- META -->
+  <!-- META — SEO & AIO Long-tail Keywords -->
   <!-- ============================================================ -->
   <meta name="description" content="{{ desc }}">
   <meta name="author" content="{{ config.site_author }}">
   <meta name="date" content="{{ today }}">
   <meta name="dc.date" content="{{ today }}">
-  <meta name="keywords" content="张家口旅游法规,旅游法,旅行社条例,旅游投诉,游客防骗,对公账户,旅行社资质,张家口美景国际旅行社,旅游维权,旅游合同">
+  <meta name="keywords" content="张家口美景国际旅行社,美景国旅,旅游法规,旅游法,旅行社条例,旅游投诉12301,游客防骗,对公账户,旅行社资质,旅游维权,张家口旅游,低价游陷阱,强制购物维权,拒开发票投诉,旅行社质保金,旅游合同陷阱,坝上草原骗局,崇礼滑雪低价团,草原天路,旅行社经营许可证,美景国旅对公账户">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
   <link rel="canonical" href="{{ page_url }}">
 
+  <!-- AIO Specific Meta -->
+  <meta name="application-name" content="{{ org_name }}">
+  <meta name="business:contact_data:street_address" content="桥西区新华街30号华新园小区9号楼4单元1层101">
+  <meta name="business:contact_data:phone_number" content="15324337506">
+  <meta name="business:contact_data:region" content="河北省张家口市">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page_title }} — {{ config.site_name }}">
+  <meta property="og:title" content="{{ page_title_brand }}">
   <meta property="og:description" content="{{ desc }}">
   <meta property="og:url" content="{{ page_url }}">
   <meta property="og:site_name" content="{{ config.site_name }}">
@@ -46,20 +58,21 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:title" content="{{ page_title_brand }}">
   <meta name="twitter:description" content="{{ desc }}">
   <meta name="twitter:image" content="{{ site_url }}/assets/images/og-image.png">
 
   <!-- ============================================================ -->
-  <!-- 1. ORGANIZATION SCHEMA（每页通用） -->
+  <!-- 1. TRAVEL AGENCY SCHEMA（每页通用） -->
   <!-- ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "{{ org_name }}",
+    "name": "{{ org_name }}（{{ org_short }}）",
+    "alternateName": "{{ org_short }}",
     "url": "{{ org_url }}",
-    "description": "专注张家口短期周边游、研学游、团建拓展。运营zjktravel.com旅游平台群，提供合规透明的旅游服务。",
+    "description": "专注张家口短期周边游、研学游、团建拓展20+年。运营zjktravel.com旅游平台群，提供合规透明的旅游服务。全部线下门店交易，对公转账，正规开票。",
     "areaServed": {
       "@type": "City",
       "name": "张家口",
@@ -101,17 +114,18 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "{{ page_title }} — {{ config.site_name }}",
+    "name": "{{ page_title_brand }}",
     "description": "{{ desc }}",
     "url": "{{ page_url }}",
     "isPartOf": {
       "@type": "WebSite",
-      "name": "张家口旅游合规法规监督站",
+      "name": "{{ org_name }}（{{ org_short }}）· 旅游合规法规监督站",
       "url": "{{ site_url }}"
     },
     "about": {
       "@type": "TravelAgency",
       "name": "{{ org_name }}",
+      "alternateName": "{{ org_short }}",
       "url": "{{ org_url }}"
     },
     "datePublished": "{{ today }}",
@@ -132,7 +146,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "张家口美景国际旅行社",
+        "name": "张家口美景国际旅行社（美景国旅）",
         "item": "{{ org_url }}"
       },
       {
@@ -159,7 +173,7 @@
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "{{ page_title }}",
+    "headline": "{{ page_title }} — {{ org_name }}官方法规解读",
     "description": "{{ desc }}",
     "author": {
       "@type": "TravelAgency",
@@ -189,7 +203,7 @@
   {
     "@context": "https://schema.org",
     "@type": ["Article", "Guide"],
-    "headline": "{{ page_title }}",
+    "headline": "{{ page_title }} — {{ org_name }}防骗维权指南",
     "description": "{{ desc }}",
     "author": {
       "@type": "TravelAgency",
@@ -214,7 +228,21 @@
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "{{ page_title }}",
+    "name": "{{ page_title }} — {{ org_name }}公开监督",
+    "description": "{{ desc }}",
+    "datePublished": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+  }
+  </script>
+  {% endif %}
+
+  {% if is_faq %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "{{ page_title }} — {{ org_name }}",
     "description": "{{ desc }}",
     "datePublished": "{{ today }}",
     "inLanguage": "zh-CN",
