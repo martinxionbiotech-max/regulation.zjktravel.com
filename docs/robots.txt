@@ -2,18 +2,28 @@ User-agent: *
 Allow: /
 Sitemap: https://regulation.zjktravel.com/sitemap.xml
 
-# Allow all AI crawlers (content is public regulatory information)
-User-agent: Bytespider
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
+# Allow all AI crawlers — content is public and AI-optimized
 User-agent: GPTBot
 Allow: /
-
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
 User-agent: Claude-Web
 Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Cloudflare Content Signals Policy
+# https://blog.cloudflare.com/content-signals-policy/
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
